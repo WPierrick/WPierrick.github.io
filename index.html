@@ -44,4 +44,38 @@ if (maitriseJS = "TRUE" ) {
 </p>
 </body>
 </html>
+<style media="screen" type="text/css">
+    ul > li
+    {
+        display: inline-block;
+    }
 
+    ul > li > ul 
+    {
+        display:none;
+        position:absolute;
+    }
+
+    ul > li:hover > ul 
+    {
+        display:block
+    }
+</style>
+
+<ul>
+    <li>
+        <span>Menu 1</span>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </li>
+    <li>
+        <span>Menu 2</span>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </li>
+</ul>
