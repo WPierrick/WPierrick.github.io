@@ -8,40 +8,91 @@
 <p>Welcome.<br /> This is a work in progress. <br />Many coding project to be added here soon.</p>
 	
 <style media="screen" type="text/css">
+    body 
+    {
+        font-family:Arial;
+    }
+    
     ul#mainMenu > li
     {
         display: inline-block;
+        width:100px;
+        height:30px;
+        line-height:30px;
+        padding: 0 10px ;
+        margin: 5px;
+        background: #265b82;
+    }
+    
+    ul#mainMenu > li > span
+    {
+        color: white;
+    }
+    
+    ul#mainMenu > li:hover
+    {
+        background: black;
+    }
+    
+    ul#mainMenu > li:hover > span
+    {
+        font-weight:bold;
     }
 
     ul#mainMenu > li > ul 
     {
-        display:none;
         position:absolute;
+        opacity:0;
+        transition: opacity .3s ease-out;
     }
 
     ul#mainMenu > li:hover > ul 
     {
-        display:block
+        opacity:1;
+    }
+    
+    ul#mainMenu > li > ul > li
+    {
+        list-style:none;
+    }
+    
+    ul#mainMenu > li > ul > li a
+    {
+        text-decoration:none;
+        color: black;
+    }
+    
+    ul#mainMenu > li > ul > li:hover
+    {
+    }
+    
+    ul#mainMenu > li > ul > li:hover a
+    {
+        font-weight:bold;
     }
 </style>
 
+<div id="debugBox">No info</div>
+
 <ul id="mainMenu">
     <li>
-        <span>Bioinformatics</span>
+        <span>Menu 1</span>
         <ul>
-            <li>Biostatistics</li>
-            <li>Data-mining</li>
-            <li>NGS Data Analysis</li>
+            <li><a href="">Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Item 3</a></li>
         </ul>
     </li>
     <li>
-        <span>Coding</span>
+        <span>Menu 2</span>
         <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
+            <li><a href="">Item 1</a></li>
+            <li><a href="">Item 2</a></li>
         </ul>
     </li>
 </ul>
+
+
 
 <p><br><br>List of bioinformatics tools used :<br /> 
 <ul>
